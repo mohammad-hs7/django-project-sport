@@ -1,0 +1,403 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>درباره باشگاه کیلین اسپورت</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 bg-dark d-none d-lg-block">
+                <a href="" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <h1 class="m-0 display-3 text-dark">
+                        <img src="img/logo.png" class="w-100" />
+                    </h1>
+                </a>
+            </div>
+            <div class="col-lg-10">
+                <div class="row bg-dark d-none d-lg-flex">
+                    <div class="col-lg-7 text-right text-white">
+                        <div class="h-100 d-inline-flex align-items-center border-left border-primary py-2 px-3">
+                            <i class="fa fa-envelope text-primary ml-2"></i>
+                            <small>info@example.com</small>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2 px-2">
+                            <i class="fa fa-phone-alt text-primary ml-2"></i>
+                            <small>+012 345 6789</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-right">
+                        <div class="d-inline-flex align-items-center pr-2">
+                            <a class="text-primary p-2" href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="text-primary p-2" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="text-primary p-2" href="">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="text-primary p-2" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="text-primary p-2" href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
+                    <a href="" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 display-4 text-primary">
+                            <img src="img/logored.png" style="width:150px" />
+                        </h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav ml-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">خانه</a>
+                            <a href="about.html" class="nav-item nav-link">درباره ما</a>
+                            <a href="service.html" class="nav-item nav-link">خدمات</a>
+                            <a href="gallery.html" class="nav-item nav-link">گالری تصاویر</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">صفحه</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="blog.html" class="dropdown-item">آخرین بلاگ ها</a>
+                                    <a href="single.html" class="dropdown-item">جزئیات بلاگ</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">تماس با ما</a>
+                        </div>
+                        <a href="" class="btn btn-primary mr-3 d-none d-lg-block">سوال بپرسید</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-primary py-0 mb-5">
+        <div class="container py-2">
+            <div class="row align-items-center py-4">
+                <div class="col-md-6 text-center text-md-right">
+                    <h1 class="display-4 mb-4 mb-md-0 text-dark text-uppercase">درباره ما</h1>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="btn btn-sm btn-outline-light" href="">خانه</a>
+                        <i class="fas fa-angle-double-left text-light mx-2"></i>
+                        <a class="btn btn-sm btn-outline-light disabled" href="">درباره ما</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- About Start -->
+    <div class="container-fluid py-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column align-items-center justify-content-center bg-about rounded h-100 py-5 px-3">
+                        <i class="fa fa-5x fa-award text-primary mb-4"></i>
+                        <h1 class="display-2 text-white mb-2" data-toggle="counter-up">25</h1>
+                        <h2 class="text-white m-0">سال سابقه</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7 pt-5 pb-lg-5">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">درباره ما</h6>
+                    <h1 class="mb-4 section-title">درباره باشگاه کیلین اسپورت </h1>
+                    <h5 class="text-muted font-weight-normal mb-3">
+                        باشگاه کیلین اسپورت با 25 سال سابقه
+                    </h5>
+                    <p>
+                        باشگاه کیلین اسپورت با 25 سال سابقه در رشته های  بادی بیلدینگ (پرورش اندام)،پاور لیفتینگ،کراس فیت،رشته بادی کلاسیک یا فیزیک کلاسیک با مربیان بزرگ کشوری و جهانی
+
+                    </p>
+                    <div class="d-flex align-items-center pt-4">
+                        <a href="" class="btn btn-primary ml-5">مطالعه بیشتر</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                                data-src="" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">پخش</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+
+
+                    <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/zt04H/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-7 pt-lg-5 pb-3">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">چرا ما رو انتخاب کنید</h6>
+                    <h1 class="mb-4 section-title">25 سال سابقه با مقامات مختلف</h1>
+                    <p class="mb-4">
+                        بهره گیری از بروزترین تجهیزات ورزشی دنیا  در محیطی منحصر به فرد، ضمن قرارگیری در مجموعه ورزشی ازادی که بزرگ‌ترین قطب ورزشی پایتخت تلقی می‌گردد، همجواری با مناطق و محله‌های مختلف تهران و دسترسی آسان از سه درب ورودی مجزا، پارکینگ اختصاصی، باشگاه کودکان، زمین گلف و جاده تندرستی، امکان یک تمرین فوق العاده جذاب و به دور از مشغله و هیاهوی روزمره را برای شما فراهم می آورد.
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1 class="text-secondary mb-2" data-toggle="counter-up">573</h1>
+                            <h6 class="font-weight-semi-bold mb-sm-4">مدال قهرمانی</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-secondary mb-2" data-toggle="counter-up">4321</h1>
+                            <h6 class="font-weight-semi-bold mb-sm-4">هنرجو ورزشی</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-secondary mb-2" data-toggle="counter-up">25</h1>
+                            <h6 class="font-weight-semi-bold mb-sm-4">سال سابقه </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5" style="min-height: 400px;">
+                    <div class="position-relative h-100 rounded overflow-hidden">
+                        <img class="position-absolute w-100 h-100" src="img/feature.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-end mb-4">
+                <div class="col-lg-6">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">تیم باشگاه کیلین اسپورت</h6>
+                    <h1 class="section-title mb-3">مربی ها و کادر ورزشی</h1>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="font-weight-normal text-muted mb-3">   بهترین مربیان پرورش اندام کشور  در باشگاه کیلین اسپورت در هفت روز هفته در دسترس برای مشاوره و ارائه برنامه های تمرینی</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel team-carousel position-relative  dir-l">
+                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
+                            <div class="position-relative">
+                                <div class="team-img">
+                                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                                </div>
+                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
+                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column bg-primary text-center py-4">
+                                <h5 class="font-weight-bold">عماد رضایی</h5>
+                                <p class="text-white m-0">فیتنس </p>
+                            </div>
+                        </div>
+                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
+                            <div class="position-relative">
+                                <div class="team-img">
+                                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                                </div>
+                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
+                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column bg-primary text-center py-4">
+                                <h5 class="font-weight-bold">رضا رضایی</h5>
+                                <p class="text-white m-0">وزنه‌برداری قدرتی</p>
+                            </div>
+                        </div>
+                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
+                            <div class="position-relative">
+                                <div class="team-img">
+                                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                                </div>
+                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
+                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column bg-primary text-center py-4">
+                                <h5 class="font-weight-bold">مرتضی کریمی</h5>
+                                <p class="text-white m-0">کراس فیت</p>
+                            </div>
+                        </div>
+                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
+                            <div class="position-relative">
+                                <div class="team-img">
+                                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
+                                </div>
+                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
+                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-secondary btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column bg-primary text-center py-4">
+                                <h5 class="font-weight-bold">کریم میرباقری</h5>
+                                <p class="text-white m-0">بادی کلاسیک</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 mt-n3 display-6 text-primary">کیلین اسپورت</h1>
+                </a>
+                <p>باشگاه کیلین اسپورت با 25 سال سابقه در ورزش بدنسازی و مربیان بزرگ کشوری و جهانی </p>
+                <h5 class="font-weight-semi-bold text-white mb-2">ساعات باشگاه:</h5>
+                <p class="mb-1">شنبه – پنج شنبه , 6 صبح  – 21 عصر</p>
+                <p class="mb-0">جمعه ها: تعطیل</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-semi-bold text-primary mb-4">راه های ارتباطی</h4>
+                <p><i class="fa fa-map-marker-alt text-primary ml-2"></i>تهران ، خیابان تابان،سمت استخر</p>
+                <p><i class="fa fa-phone-alt text-primary ml-2"></i>09123456789</p>
+                <p><i class="fa fa-envelope text-primary ml-2"></i>info@example.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-light btn-social ml-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-light btn-social ml-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-light btn-social ml-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-semi-bold text-primary mb-4">دسترسی سریع</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="#"><i class="fa fa-circle  fa-8px  ml-2"></i>خانه</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-circle  fa-8px  ml-2"></i>درباره ما</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-circle  fa-8px  ml-2"></i>برنامه های تمرینی</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-circle  fa-8px  ml-2"></i>مدال های باشگاه</a>
+                    <a class="text-white" href="#"><i class="fa fa-circle  fa-8px  ml-2"></i>تماس با ما</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-semi-bold text-primary mb-4">خبر نامه</h4>
+                <p>از آخرین اخبار و تعطیلی ها و آفرهای باشگاه مطلع شوید، کافیست ایمیل خود را در قسمت پایین وارد کنید</p>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-0" style="padding: 25px;border-radius: 0px 25px 25px 0px;" placeholder="پست الکترونیک">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-4" style="border-radius: 25px 0px 0px 25px;">عضویت</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-right mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a href="#">کیلین اسپورت</a>.کپی رایت محفوظ <a href="#">برای باشگاه</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">مربیان</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">مدیریت</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">سوالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">راهنما</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <title>بوکس کرج</title>
+
+    <head>
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="{% static 'dist/css/owl.carousel.css/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'dist/css/lightbox.css/lightbox.min.css' %}" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{% static 'dist/css/style.css' %}" rel="stylesheet">
+    </head>
+    {% block content %}
+    
+    {% endblock %}
+<body>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'dist/js/easing.js/easing.min.js' %}"></script>
+    <script src="{% static 'dist/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'dist/js/counterup.min.js' %}"></script>
+    <script src="{% static 'dist/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'dist/js/isotope.pkgd.js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'dist/js/lightbox.js/lightbox.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'dist/js/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'dist/js/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'dist/js/main.js' %}"></script>
+</body>
+
+</html>
