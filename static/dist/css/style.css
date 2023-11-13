@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roosta';
-    src: url('../Font/Roosta.ttf') format('truetype');
+    src: url('../font/Roosta.ttf') format('truetype');
 }
  
 :root {
@@ -60,7 +60,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #777777;
-  text-align: right;
+  text-align: left;
   background-color: #fff;direction:rtl
 }
 
